@@ -1,0 +1,162 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar {
+  background-color: #282c34;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav-link {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #61dafb;
+}
+
+/* Character cards arrangement */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* space between cards */
+  justify-content: center; /* centers the cards */
+  padding: 20px;
+}
+
+/* Cards for the characters page */
+.card {
+width: 250px;
+background: #fff;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+width: 100%;
+height: auto;
+}
+
+.card-info {
+padding: 10px;
+}
+
+.locationCard-info {
+    padding: 10px; 
+}
+
+.card-info h3 {
+margin: 5px 0;
+font-size: 18px;
+}
+
+.card-info p {
+margin: 4px 0;
+font-size: 14px;
+}
+
+/* Location cards */
+.location-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.locationCard {
+  width: 250px;
+  background: #f8f7f7;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.locationCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.locationCard-info {
+  padding: 15px;
+}
+
+.locationCard-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.locationCard-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Episode cards */
+.episode-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.episodeCard {
+  width: 250px;
+  background: #f8f7f7;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.episodeCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.episodeCard-info {
+  padding: 15px;
+}
+
+.episodeCard-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.episodeCard-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+
+/* Pagination buttons */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #282c34;
+  color: white;
+  margin: 1rem;
+}
+
+.pagination button:disabled {
+   background-color: #aaa;
+}
+  
